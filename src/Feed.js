@@ -8,7 +8,6 @@ function Feed() {
         <div className="feed">
             {/* Header */}
             <div className="feed-header">
-                <h2>Home</h2>
                 
             </div>
 
