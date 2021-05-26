@@ -15,13 +15,8 @@ function Feed() {
     return (
         <div className="feed">
 
-            <div className="feed-header">
-                
-            </div>
-
-
+            <div className="feed-header"></div>
             <TweetBox />
-
             {posts.map(post => (
                 <Post 
                     displayName= {post.displayName}
@@ -32,7 +27,6 @@ function Feed() {
                     image={post.image}
                 />
             ))}
-
 
         </div>
     )
