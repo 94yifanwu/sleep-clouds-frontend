@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Sidebar.css'
 
 import SidebarOption from './SidebarOption'
@@ -6,7 +6,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import { BookmarkBorder, ListAlt, MailOutline, MobileFriendlySharp, MoreHoriz, PermIdentity } from '@material-ui/icons';
+import { BookmarkBorder, ListAlt, MailOutline, MoreHoriz, PermIdentity } from '@material-ui/icons';
 import {Button} from "@material-ui/core"
 
 

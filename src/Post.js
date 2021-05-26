@@ -1,4 +1,4 @@
-import { ChatBubbleOutline, Favorite, FavoriteBorder, Publish, Repeat, VerifiedUser } from '@material-ui/icons'
+import { ChatBubbleOutline, FavoriteBorder, Publish, Repeat, VerifiedUser } from '@material-ui/icons'
 import React from 'react'
 import "./Post.css"
 import {Avatar} from '@material-ui/core'
