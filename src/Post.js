@@ -6,7 +6,7 @@ import {Avatar} from '@material-ui/core'
 function Post({
     displayName,
     username,
-    varified,
+    verified,
     text,
     image,
     avatar
@@ -14,22 +14,22 @@ function Post({
     return (
         <div className="post">
             <div className="post-avatar">
-                <Avatar src="https://avatarfiles.alphacoders.com/125/125254.png"></Avatar>
+                <Avatar src={avatar}></Avatar>
             </div>
             <div className="post-body">
                 <div className="post-header">
                     <div className="post-header-text">
                         <h3>
-                            Yifan Wu 
+                            {displayName} 
                             <span> 
-                                <VerifiedUser className="post-badge" />
+                                {verified && <VerifiedUser className="post-badge"  />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post-header-description">
-                        <p>I challenge you to save......</p>
+                        <p>{text}</p>
                     </div>
-                    <img src="https://media.giphy.com/media/AZFXN9ckBvn56F6zL6/giphy.gif" alt="" />
+                    <img src={image} alt="" />
                     <div className="post-footer">
                         <ChatBubbleOutline fontSize="small" />
                         <Repeat fontSize="small"/>
