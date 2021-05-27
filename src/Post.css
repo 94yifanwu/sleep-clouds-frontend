@@ -3,6 +3,7 @@
   align-items: flex-start;
   border-bottom: 1px solid var(--twitter-backgroud);
   padding-bottom: 10px;
+  max-width: 500px !important;
 }
 
 .post-body {

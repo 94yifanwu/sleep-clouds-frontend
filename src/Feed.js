@@ -4,6 +4,7 @@ import './Feed.css'
 import Post from './Post'
 import db from './firebase'
 import FlipMove from 'react-flip-move'
+import { DeleteForeverTwoTone } from '@material-ui/icons'
 
 
 function Feed() {
@@ -12,8 +13,11 @@ function Feed() {
         db.collection('posts')
             .orderBy("timestamp", "desc")
             .onSnapshot(snapshot=>(
-                setPosts(snapshot.docs.map(
-                    doc=>doc.data()
+                setPosts(snapshot.docs.map( (doc) => {
+
+                        let d = doc.data()
+                        return d
+                    }
                 )
             )
         ))
