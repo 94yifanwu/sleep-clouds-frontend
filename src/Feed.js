@@ -3,13 +3,15 @@ import TweetBox from './TweetBox'
 import './Feed.css'
 import Post from './Post'
 import db from './firebase'
+import FlipMove from 'react-flip-move'
+
 
 function Feed() {
     const [posts, setPosts] = useState([])
     useEffect( ()=>{
-        db.collection('posts').onSnapshot(snapshot=>{
+        db.collection('posts').onSnapshot(snapshot=>(
             setPosts(snapshot.docs.map(doc=>doc.data()))
-        })
+        ))
     }, [] )
 
     return (
@@ -17,8 +19,10 @@ function Feed() {
 
             <div className="feed-header"></div>
             <TweetBox />
+            <FlipMove>
             {posts.map(post => (
                 <Post 
+                    key={post.text}
                     displayName= {post.displayName}
                     username={post.username}
                     verified={post.verified}
@@ -27,6 +31,7 @@ function Feed() {
                     image={post.image}
                 />
             ))}
+            </FlipMove>
 
         </div>
     )

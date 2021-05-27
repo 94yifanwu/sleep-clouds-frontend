@@ -1,17 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './TweetBox.css'
 import {Avatar, Button} from '@material-ui/core'
+import db from './firebase'
 
 function TweetBox() {
+    const [tweetMessage, setTweetMessage] = useState("")
+    const [tweetImage, setTweetImage] = useState("")
+    
+    const sendTweet = e => {
+        e.preventDefault()
+
+        db.collection("posts").add({
+            displayName:"Yifan Wu",
+            username:"yifanwu",
+            verified:true,
+            text:tweetMessage,
+            image:tweetImage,
+            avatar:"https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg"
+        })
+
+        setTweetMessage("")
+        setTweetImage("")
+    }
+
     return (
         <div class="tweetbox">
             <form>
                 <div className="tweetbox-input">
-                    <Avatar src="https://avatarfiles.alphacoders.com/125/125254.png"></Avatar>
-                    <input placeholder="what's happending" type="text" />
+                    <Avatar 
+                        src="https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg">
+                    </Avatar>
+
+                    <input 
+                        onChange = { e=> setTweetMessage(e.target.value)}
+                        value = {tweetMessage}
+                        placeholder="what's happending" 
+                        type="text" />
                 </div>
-                <input className="tweetbox-image-input" placeholder="enter image URL" type="text" />
-                <Button  className="tweetbox-buttom">Tweet</Button>
+
+                <input 
+                    value={tweetImage}
+                    onChange={e => setTweetImage(e.target.value)}
+                    className="tweetbox-image-input" 
+                    placeholder="enter image URL" 
+                    type="text" 
+                />
+
+                <Button  
+                    type="submit"
+                    onClick={sendTweet}
+                    className="tweetbox-buttom">
+                    Tweet
+                </Button>
+
             </form>
         </div>
     )
