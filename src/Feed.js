@@ -9,11 +9,10 @@ import FlipMove from 'react-flip-move'
 function Feed() {
     const [posts, setPosts] = useState([])
     useEffect( ()=>{
-        db.collection('posts').onSnapshot(snapshot=>(
-            setPosts(snapshot.docs.map(doc=>
-                doc.data()
-                //console.log(doc)
-            ))
+        db.collection('posts')
+            .orderBy("timestamp", "desc")
+            .onSnapshot(snapshot=>(
+            setPosts(snapshot.docs.map(doc=>doc.data()))
         ))
     }, [] )
 //https://lh3.googleusercontent.com/proxy/abssAmX7crAfu77H75jy-l79HzA_3hFk1-uryJ9bdR_mp4Gijt7PPeQ3UpybDVtxyNzCNCMcmH9P2MpTaSdRMISmMDoq4SOLB5jS5KaPIfseP2uO7SNAvXl9FTR61zMjB5GF
