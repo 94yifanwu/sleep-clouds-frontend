@@ -12,7 +12,10 @@ function Feed() {
         db.collection('posts')
             .orderBy("timestamp", "desc")
             .onSnapshot(snapshot=>(
-            setPosts(snapshot.docs.map(doc=>doc.data()))
+                setPosts(snapshot.docs.map(
+                    doc=>doc.data()
+                )
+            )
         ))
     }, [] )
 
