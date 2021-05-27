@@ -16,7 +16,8 @@ function TweetBox() {
             verified:true,
             text:tweetMessage,
             image:tweetImage,
-            avatar:"https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg"
+            avatar:"https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg",
+            timestamp: (Date.now())
         })
 
         setTweetMessage("")

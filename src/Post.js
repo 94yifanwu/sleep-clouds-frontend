@@ -5,12 +5,15 @@ import {Avatar} from '@material-ui/core'
 
 const Post = forwardRef ( 
     ({
+        key,
         displayName,
         username,
         verified,
         text,
         image,
-        avatar}, ref) =>  
+        avatar,
+        timestamp
+        }, ref) =>  
     {
     return (
         <div className="post">
@@ -21,6 +24,7 @@ const Post = forwardRef (
                 <div className="post-header">
                     <div className="post-header-text">
                         <h3>
+                            {key}
                             {displayName} 
                             <span> 
                                 {verified && <VerifiedUser className="post-badge"  />} @{username}

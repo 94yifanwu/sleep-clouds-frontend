@@ -13,7 +13,9 @@ function Feed() {
             setPosts(snapshot.docs.map(doc=>doc.data()))
         ))
     }, [] )
-
+//https://lh3.googleusercontent.com/proxy/abssAmX7crAfu77H75jy-l79HzA_3hFk1-uryJ9bdR_mp4Gijt7PPeQ3UpybDVtxyNzCNCMcmH9P2MpTaSdRMISmMDoq4SOLB5jS5KaPIfseP2uO7SNAvXl9FTR61zMjB5GF
+//image
+//https://media.giphy.com/media/AZFXN9ckBvn56F6zL6/giphy.gif
     return (
         <div className="feed">
 
@@ -22,7 +24,7 @@ function Feed() {
             <FlipMove>
             {posts.map(post => (
                 <Post 
-                    key={post.text}
+                    key={post.id}
                     displayName= {post.displayName}
                     username={post.username}
                     verified={post.verified}
