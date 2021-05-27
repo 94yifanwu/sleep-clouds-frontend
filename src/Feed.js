@@ -14,24 +14,24 @@ function Feed() {
             .orderBy("timestamp", "desc")
             .onSnapshot(snapshot=>(
                 setPosts(snapshot.docs.map( (doc) => {
-
                         let d = doc.data()
+                        d['id'] = doc.id 
                         return d
-                    }
-                )
+                    })
             )
         ))
     }, [] )
+
 
     return (
         <div className="feed">
 
             <div className="feed-header"></div>
             <TweetBox />
-            <FlipMove>
+            <FlipMove> 
             {posts.map(post => (
                 <Post 
-                    key={post.text}
+                    key={post.id}
                     displayName= {post.displayName}
                     username={post.username}
                     verified={post.verified}
