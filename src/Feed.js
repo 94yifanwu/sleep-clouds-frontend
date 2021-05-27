@@ -4,7 +4,7 @@ import './Feed.css'
 import Post from './Post'
 import db from './firebase'
 import FlipMove from 'react-flip-move'
-import { DeleteForeverTwoTone } from '@material-ui/icons'
+
 
 
 function Feed() {
