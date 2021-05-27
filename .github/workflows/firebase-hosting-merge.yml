@@ -21,11 +21,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Cache dependencies
+        id: cache
         uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
+          path: ./node_modules
+          key: modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies
         run: npm install
