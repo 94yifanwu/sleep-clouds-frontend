@@ -12,6 +12,7 @@ function Feed() {
         db.collection('posts').onSnapshot(snapshot=>(
             setPosts(snapshot.docs.map(doc=>
                 doc.data()
+                //console.log(doc)
             ))
         ))
     }, [] )
