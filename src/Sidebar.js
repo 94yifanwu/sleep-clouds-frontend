@@ -18,10 +18,10 @@ function Sidebar() {
                 <SidebarOption active Icon={HomeIcon} text="Home" />
                 <SidebarOption Icon={SearchIcon} text="Explore"/>
                 <SidebarOption Icon={NotificationsNoneIcon} text="Notification"/>
-                <SidebarOption Icon={MailOutline} text="MailOutline"/>
+                <SidebarOption Icon={MailOutline} text="Mail"/>
                 <SidebarOption Icon={BookmarkBorder} text="Bookmark"/>
-                <SidebarOption Icon={ListAlt} text="ListAlt"/>
-                <SidebarOption Icon={PermIdentity} text="PermIdentity"/>
+                <SidebarOption Icon={ListAlt} text="List"/>
+                <SidebarOption Icon={PermIdentity} text="Identity"/>
                 <SidebarOption Icon={MoreHoriz} text="More"/>
                 {/* Button -> Tweet */}
                 <Button variant="outlined" fullWidth className="sidebar-tweet-button">Nice Day!</Button>
