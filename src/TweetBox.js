@@ -16,7 +16,7 @@ function TweetBox() {
             verified:true,
             text:tweetMessage,
             image:tweetImage,
-            avatar:"https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg",
+            avatar:"https://cdn.dribbble.com/users/2135446/screenshots/7434903/media/746417f0743d3b0101f6bf7634b60a32.gif",
             timestamp: (Date.now())
         })
 
@@ -29,13 +29,13 @@ function TweetBox() {
             <form>
                 <div className="tweetbox-input">
                     <Avatar 
-                        src="https://image.freepik.com/free-vector/man-profile-cartoon_18591-58482.jpg">
+                        src="https://cdn.dribbble.com/users/2135446/screenshots/7434903/media/746417f0743d3b0101f6bf7634b60a32.gif">
                     </Avatar>
 
                     <input 
-                        onChange = { e=> setTweetMessage(e.target.value)}
+                        onChange = {e => setTweetMessage(e.target.value)}
                         value = {tweetMessage}
-                        placeholder="what's happending" 
+                        placeholder="what's happening today ;)" 
                         type="text" />
                 </div>
 
