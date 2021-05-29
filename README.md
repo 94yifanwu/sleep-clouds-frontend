@@ -6,7 +6,10 @@ Frontend:
 
 React and Material-UI
 
-Backend database and host:
+Database :
 
 Firebase
 
+Deploy:
+
+Github Action + Firebase

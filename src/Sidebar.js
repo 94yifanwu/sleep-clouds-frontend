@@ -24,7 +24,9 @@ function Sidebar() {
                 <SidebarOption Icon={PermIdentity} text="Identity"/>
                 <SidebarOption Icon={MoreHoriz} text="More"/>
                 {/* Button -> Tweet */}
-                <Button variant="outlined" fullWidth className="sidebar-tweet-button">Nice Day!</Button>
+                <Button variant="outlined" fullWidth className="sidebar-tweet-button">
+                    <span >Nice Day!</span>
+                </Button>
             
         </div>
     )
