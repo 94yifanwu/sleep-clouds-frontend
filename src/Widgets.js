@@ -21,6 +21,7 @@ function Widgets() {
                     sourceType="profile"
                     screenName="musiclubjazz"
                     options={{ height:400 }} />
+                <br/>
                 <TwitterShareButton
                     url={"https://facebook/com/jazz"}
                     options={{ text: "#jazz music is awesome", via: "musiclubjazz" }} />

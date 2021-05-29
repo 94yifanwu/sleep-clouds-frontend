@@ -1,7 +1,8 @@
 .feed {
   flex: 0.4;
   border-right: 1px solid var(--twitter-backgroud);
-  min-width: fit-content;
+  border-left: 1px solid var(--twitter-backgroud);
+  /* min-width: fit-content; */
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -16,7 +17,7 @@
   top: 0;
   background-color: white;
   z-index: 100;
-  border: 1px solid var(--twitter-backgroud);
+  border-top: 1px solid var(--twitter-backgroud);
   padding-left: 15px 20px;
 }
 

@@ -3,6 +3,22 @@
   margin-left: 40px;
 }
 
+
+.widgets {
+  flex: 0.4;
+  /* border-right: 1px solid var(--twitter-backgroud); */
+  /* min-width: fit-content; */
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 .widgets-input {
   display: flex;
   align-items: center;
