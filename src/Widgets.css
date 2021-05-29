@@ -1,11 +1,6 @@
 .widgets {
   flex: 0.3;
   margin-left: 40px;
-}
-
-
-.widgets {
-  flex: 0.4;
   /* border-right: 1px solid var(--twitter-backgroud); */
   /* min-width: fit-content; */
   overflow-y: scroll;
