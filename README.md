@@ -2,14 +2,8 @@
 
 https://twitter-clone-723d4.web.app/
 
-Frontend:
+Frontend: React and Material-UI
 
-React and Material-UI
+Database : Firebase
 
-Database :
-
-Firebase
-
-Deploy:
-
-Github Action + Firebase
+Deploy: Github Action + Firebase
