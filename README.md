@@ -1,4 +1,4 @@
-# Public link to view
+# Twitter Frontend
 
 https://twitter-clone-723d4.web.app/
 
