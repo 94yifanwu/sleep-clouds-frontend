@@ -13,10 +13,11 @@ function Sidebar() {
     return (
         <div className="sidebar">
                 {/* Twitter icon*/}
-                <TwitterIcon className="sidebar-twitterIcon" />
+
                 {/* Sidebar Option*/}
                 <SidebarOption active Icon={HomeIcon} text="Live Clouds" />
                 <SidebarOption Icon={SearchIcon} text="Wave Clouds"/>
+                <SidebarOption Icon={SearchIcon} text="Story Clouds"/>
                 <SidebarOption Icon={NotificationsNoneIcon} text="Morning Clouds"/>
                 
                 {/* Button -> Tweet */}
