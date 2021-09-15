@@ -10,4 +10,4 @@ Deploy: Github Action + Firebase
 
 Frontend pipeline 
 
-https://app.diagrams.net/#G1-yJ7zCFdDnDh4gwzpqoNsFio5Yz3uPv_
+https://drive.google.com/file/d/1-yJ7zCFdDnDh4gwzpqoNsFio5Yz3uPv_/view?usp=sharing
