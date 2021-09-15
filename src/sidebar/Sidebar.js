@@ -15,14 +15,10 @@ function Sidebar() {
                 {/* Twitter icon*/}
                 <TwitterIcon className="sidebar-twitterIcon" />
                 {/* Sidebar Option*/}
-                <SidebarOption active Icon={HomeIcon} text="Home" />
-                <SidebarOption Icon={SearchIcon} text="Explore"/>
-                <SidebarOption Icon={NotificationsNoneIcon} text="Notification"/>
-                <SidebarOption Icon={MailOutline} text="Mail"/>
-                <SidebarOption Icon={BookmarkBorder} text="Bookmark"/>
-                <SidebarOption Icon={ListAlt} text="List"/>
-                <SidebarOption Icon={PermIdentity} text="Identity"/>
-                <SidebarOption Icon={MoreHoriz} text="More"/>
+                <SidebarOption active Icon={HomeIcon} text="Live Clouds" />
+                <SidebarOption Icon={SearchIcon} text="Wave Clouds"/>
+                <SidebarOption Icon={NotificationsNoneIcon} text="Morning Clouds"/>
+                
                 {/* Button -> Tweet */}
                 <Button variant="outlined" fullWidth className="sidebar-tweet-button">
                     <span >Nice Day!</span>

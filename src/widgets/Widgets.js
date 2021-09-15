@@ -15,8 +15,8 @@ function Widgets() {
             </div>
             <div className="widgets-widget-container">
                 <h2>Real Tweet API</h2> 
-                <TwitterTweetEmbed tweetId={"373176821308592129"} /> 
-                <TwitterTweetEmbed tweetId={"373164207497543680"} /> 
+                <TwitterTweetEmbed tweetId={"1397630625138450433"} /> 
+                <TwitterTweetEmbed tweetId={"1437283024186511363"} /> 
                 <TwitterTimelineEmbed
                     sourceType="profile"
                     screenName="musiclubjazz"
