@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 import SidebarOption from './SidebarOption'
-import TwitterIcon from '@material-ui/icons/Twitter';
+//import TwitterIcon from '@material-ui/icons/Twitter';
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
@@ -22,7 +22,7 @@ function Sidebar() {
                 
                 {/* Button -> Tweet */}
                 <Button variant="outlined" fullWidth className="sidebar-tweet-button">
-                    <span >Nice Day!</span>
+                    <span >Good Day!</span>
                 </Button>
             
         </div>
