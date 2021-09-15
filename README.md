@@ -1,6 +1,6 @@
 # Twitter Frontend
 
-`https://twitter-clone-723d4.web.app/`
+https://twitter-clone-723d4.web.app/
 
 Frontend: React and Material-UI
 
