@@ -35,15 +35,15 @@ function TweetBox() {
                     <input 
                         onChange = {e => setTweetMessage(e.target.value)}
                         value = {tweetMessage}
-                        placeholder="what's happening today ;)" 
+                        placeholder="Upload and tag your favorite Cloud " 
                         type="text" />
-                </div>
 
+                </div>
                 <input 
                     value={tweetImage}
                     onChange={e => setTweetImage(e.target.value)}
                     className="tweetbox-image-input" 
-                    placeholder="enter image URL" 
+                    placeholder="enter audio URL" 
                     type="text" 
                 />
 
@@ -51,7 +51,7 @@ function TweetBox() {
                     type="submit"
                     onClick={sendTweet}
                     className="tweetbox-buttom">
-                    Tweet
+                    Upload
                 </Button>
 
             </form>

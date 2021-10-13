@@ -14,17 +14,15 @@ function Widgets() {
                 <input placeholder="search" type="text" />
             </div>
             <div className="widgets-widget-container">
-                <h2>Real Tweet API</h2> 
-                <TwitterTweetEmbed tweetId={"1397630625138450433"} /> 
-                <TwitterTweetEmbed tweetId={"1437283024186511363"} /> 
+                <h2>Recommended Clouds</h2> <br/>
+
                 <TwitterTimelineEmbed
                     sourceType="profile"
-                    screenName="musiclubjazz"
-                    options={{ height:400 }} />
+                    screenName="sleepmusiclover"
+                    options={{ height:600 }} />
+                <TwitterTweetEmbed tweetId={"1443616723152801797"} /> 
+
                 <br/>
-                <TwitterShareButton
-                    url={"https://facebook/com/jazz"}
-                    options={{ text: "#jazz music is awesome", via: "musiclubjazz" }} />
             </div>
         </div>
     )

@@ -19,12 +19,11 @@ function Sidebar() {
                 <SidebarOption Icon={SearchIcon} text="Wave Clouds"/>
                 <SidebarOption Icon={SearchIcon} text="Story Clouds"/>
                 <SidebarOption Icon={NotificationsNoneIcon} text="Morning Clouds"/>
-                <SidebarOption Icon={HomeIcon} text="Upload"/>
 
 
                 {/* Button -> Tweet */}
                 <Button variant="outlined" fullWidth className="sidebar-tweet-button">
-                    <span >Good Day!</span>
+                    <span >Upload</span>
                 </Button>
             
         </div>
