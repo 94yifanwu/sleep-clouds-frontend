@@ -2,7 +2,6 @@ import './Widgets.css'
 import { Search } from '@material-ui/icons'
 import React from 'react'
 import {TwitterTimelineEmbed, 
-        TwitterShareButton,
         TwitterTweetEmbed
         } from 'react-twitter-embed'
 
