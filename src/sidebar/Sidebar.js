@@ -15,9 +15,8 @@ function Sidebar() {
                 {/* Twitter icon*/}
 
                 {/* Sidebar Option*/}
-                <SidebarOption active Icon={HomeIcon} text="Live Clouds" />
-                <SidebarOption Icon={SearchIcon} text="Wave Clouds"/>
-                <SidebarOption Icon={SearchIcon} text="Story Clouds"/>
+                <SidebarOption active Icon={SearchIcon} text="Story Clouds"/>
+                <SidebarOption Icon={HomeIcon} text="Live Clouds" />
                 <SidebarOption Icon={NotificationsNoneIcon} text="Morning Clouds"/>
 
 
