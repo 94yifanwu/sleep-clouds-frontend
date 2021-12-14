@@ -4,7 +4,7 @@ import "./Post.css"
 import { Avatar } from '@material-ui/core'
 
 let audio = new Audio("./1.mp3")
-const start = () => {
+const playAudio = () => {
     audio.play()
 }
 
@@ -38,7 +38,7 @@ const Post = forwardRef(
                         <div className="post-header-description">
                             <p>{text}</p>
                         </div>
-                        <img src={image} alt="" onClick={start} />
+                        <img src={image} alt="" onClick={playAudio} />
                         <div className="post-footer">
                             <ChatBubbleOutline fontSize="small" />
                             <Repeat fontSize="small" />
